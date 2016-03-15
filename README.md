@@ -53,9 +53,9 @@ public partial class FirstPage : ContentPage, IAnimationPage
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
 
 ##Links
-**Xamarin Components Store:**  https://components.xamarin.com/view/customnavpage
+- [Xamarin Components Store](https://components.xamarin.com/view/customnavpage)
+- [YouTube Demo](https://youtu.be/Ycn5MS1xxTE)
 
-**YouTube Demo:** https://youtu.be/Ycn5MS1xxTE
 ##Changes
 **Big update version 1.2**
 
