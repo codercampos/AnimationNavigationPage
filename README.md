@@ -1,15 +1,14 @@
-# Xamarin.Forms.Controls
-##1. Animation Navigation Page
+# Animation Navigation Page
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
 ![Android](Gif/Android.gif) ![iOS](Gif/iOS.gif)
 
-### Support platforms
+## Support platforms
 
 - [x] Android
 - [x] iOS
 - [ ] WP (Coming Soon)
 
-### Usage
+## Usage
 The simplest example of using AnimationNavigationPage looks something like this:
 
 - Create AnimationNavigationPage
@@ -48,16 +47,16 @@ public partial class FirstPage : ContentPage, IAnimationPage
 }
 ```
 
-###Features
+##Features
 - Set Animation Duration.
 - Select Animation type (Empty, Default, Fade, Flip, Slide).
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
 
-###Links
+##Links
 **Xamarin Components Store:**  https://components.xamarin.com/view/customnavpage
 
 **YouTube Demo:** https://youtu.be/Ycn5MS1xxTE
-###Changes
+##Changes
 **Big update version 1.2**
 
 - Improve stability.
