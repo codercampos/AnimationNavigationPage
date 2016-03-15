@@ -1,14 +1,14 @@
 # Xamarin.Forms.Controls
 ##1. Animation Navigation Page
-iOS:
-
-![alt tag] (https://raw.githubusercontent.com/AlexandrNikulin/AnimationNavigationPage/master/Gif/iOS.gif)
-
-Android:
-
-![alt tag](https://raw.githubusercontent.com/AlexandrNikulin/AnimationNavigationPage/master/Gif/Android.gif)
-
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
+![Android](Gif/Android.gif) ![iOS](Gif/iOS.gif)
+
+### Support platforms
+
+- [x] Android
+- [x] iOS
+- [ ] WP (Coming Soon)
+
 ### Usage
 The simplest example of using AnimationNavigationPage looks something like this:
 
