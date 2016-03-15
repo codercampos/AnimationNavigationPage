@@ -1,5 +1,13 @@
 # Xamarin.Forms.Controls
 ##1. Animation Navigation Page
+iOS:
+
+![alt tag] (https://raw.githubusercontent.com/AlexandrNikulin/AnimationNavigationPage/master/Gif/iOS.gif)
+
+Android:
+
+![alt tag](https://raw.githubusercontent.com/AlexandrNikulin/AnimationNavigationPage/master/Gif/Android.gif)
+
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
 ### Usage
 The simplest example of using AnimationNavigationPage looks something like this:
@@ -39,18 +47,16 @@ public partial class FirstPage : ContentPage, IAnimationPage
         public IPageAnimation PageAnimation { get; } = new FlipPageAnimation { Duration = 650, Subtype = AnimationSubtype.FromLeft }; 
 }
 ```
-Android:
 
-![alt tag](https://github.com/AlexandrNikulin/Xamarin.Forms.Controls/blob/master/Samples/Sample.Droid/Screenshots/Android.gif)
-
-iOS:
-
-![alt tag] (https://github.com/AlexandrNikulin/Xamarin.Forms.Controls/blob/master/Samples/Sample.iOS/Screenshots/iOS.gif)
 ###Features
 - Set Animation Duration.
 - Select Animation type (Empty, Default, Fade, Flip, Slide).
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
-
+###Links
+####Xamarin Components Store:
+https://components.xamarin.com/view/customnavpage
+#### YouTube Demo:
+https://youtu.be/Ycn5MS1xxTE
 ###Changes
 **Big update version 1.2**
 
