@@ -58,7 +58,10 @@ public partial class FirstPage : ContentPage, IAnimationPage
 ```
 
 ##Changes
-**Big update version 1.2**
+**New in 1.2.1**
+- Implement "Swipe to go back" gesture for iOS.
+
+**New in 1.2.0**
 
 - Improve stability.
 - Fix some bugs.
