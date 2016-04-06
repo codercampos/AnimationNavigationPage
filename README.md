@@ -62,7 +62,7 @@ public partial class FirstPage : ContentPage, IAnimationPage
 
 - Optimize package size.
 - Improve performance.
-- 
+
 **New in 1.2.1**
 
 - Implement "Swipe to go back" gesture for iOS.
