@@ -5,12 +5,12 @@ Override the default Page Transitions for Xamarin.Forms when calling PushAsync a
 
 ##Features
 - Set Animation Duration.
-- Select Animation type (Empty, Default, Fade, Flip, Slide).
+- Select Animation type (Empty, Push, Fade, Flip, Slide).
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
 
 ##Links
 - [Xamarin Components Store](https://components.xamarin.com/view/customnavpage)
-- [YouTube Demo](https://youtu.be/Ycn5MS1xxTE)
+- [YouTube Demo](https://youtu.be/Re48wHf_7yU)
 
 ## Support platforms
 
@@ -31,7 +31,7 @@ public class App : Application
         }
 }
 ```
-- Create AnimationPage instead ContentPage and create instance of FadePageAnimation or DefaultPageAnimation or FlipPageAnimation etc in xaml or bind from ViewModel.
+- Create AnimationPage instead ContentPage and create instance of FadePageAnimation or PushPageAnimation or FlipPageAnimation etc in xaml or bind from ViewModel.
 ```csharp   
 <?xml version="1.0" encoding="UTF-8"?>
 <controls:AnimationPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -58,6 +58,11 @@ public partial class FirstPage : ContentPage, IAnimationPage
 ```
 
 ##Changes
+**New in 1.2.3**
+
+- New animation for Android (Push).
+- New animation for iOS (Fade).
+
 **New in 1.2.2**
 
 - Optimize package size.
@@ -66,9 +71,3 @@ public partial class FirstPage : ContentPage, IAnimationPage
 **New in 1.2.1**
 
 - Implement "Swipe to go back" gesture for iOS.
-
-**New in 1.2.0**
-
-- Improve stability.
-- Fix some bugs.
-- New sample project.
