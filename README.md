@@ -1,6 +1,6 @@
 ## **Xamarin is Free! Get 50% on AnimationNavPage. Go build something!!**
 
-**Promo Code:** DISC-GitHub-AnimationNavigationPage-Sale
+**Promo Code for Xamarin Components Store:** DISC-GitHub-AnimationNavigationPage-Sale
 # Animation Navigation Page
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
 
