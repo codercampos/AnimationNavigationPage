@@ -1,4 +1,4 @@
-## **Xamarin is Free! And i'm happy :) Get 50% on AnimationNavPage. Go build something!!**
+## **Xamarin is Free! Get 50% on AnimationNavPage. Go build something!!**
 
 **Promo Code:** DISC-GitHub-AnimationNavigationPage-Sale
 # Animation Navigation Page
