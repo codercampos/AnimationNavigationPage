@@ -59,7 +59,7 @@ public partial class FirstPage : ContentPage, IAnimationPage
 
 ##Changes
 
-**New in 1.2.3**
+**New in 1.2.4**
 
 - Optimize animation for iOS and Android.
 
