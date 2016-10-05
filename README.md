@@ -5,7 +5,7 @@ Override the default Page Transitions for Xamarin.Forms when calling PushAsync a
 
 ##Features
 - Set Animation Duration.
-- Select Animation type (Empty, Push, Fade, Flip, Slide).
+- Select Animation type (Empty, Push, Fade, Flip, Slide, Roll, Rotate).
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
 
 ##Links
@@ -58,6 +58,10 @@ public partial class FirstPage : ContentPage, IAnimationPage
 ```
 
 ##Changes
+**New in 1.5.0**
+
+- New animation types (Roll and Rotate).
+- Support FormsAppCompatActivity for Android (limitation not supported Flip animation and changing animation duration. This features will be implemented on next versions).
 
 **New in 1.2.4**
 
