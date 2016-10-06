@@ -1,4 +1,5 @@
 # Animation Navigation Page
+## Get 50% on [Animation Navigation Page](https://components.xamarin.com/view/customnavpage) PromoCode: DISC-Twitter-AnimationNavPage-Sale
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
 
 ![Android](Gif/Android.gif) ![iOS](Gif/iOS.gif)
