@@ -58,25 +58,19 @@ public partial class FirstPage : ContentPage, IAnimationPage
 ```
 
 ##Changes
+**New in 1.5.3**
+
+- Implement Property AnimateNavigationBar (bool) in AnimationNavigationPage. According this issue: https://github.com/AlexandrNikulin/AnimationNavigationPage/issues/11
+
+**New in 1.5.2**
+
+- Implement Bounce Effect for Animations.
+
+**New in 1.5.1**
+
+- Support Animation Duration for FormsAppCompatActivity (Android).
+
 **New in 1.5.0**
 
 - New animation types (Roll and Rotate).
 - Support FormsAppCompatActivity for Android (limitation not supported Flip animation and changing animation duration. This features will be implemented on next versions).
-
-**New in 1.2.4**
-
-- Optimize animation for iOS and Android.
-
-**New in 1.2.3**
-
-- New animation for Android (Push).
-- New animation for iOS (Fade).
-
-**New in 1.2.2**
-
-- Optimize package size.
-- Improve performance.
-
-**New in 1.2.1**
-
-- Implement "Swipe to go back" gesture for iOS.
