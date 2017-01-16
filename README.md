@@ -64,33 +64,33 @@ public partial class FirstPage : ContentPage, IAnimationPage
 If you use my control with «AnimationPage» looks at this sample:
 
     public class SamplePage : AnimationPage
-     {
-            protected override void OnAnimationStarted (bool isPopAnimation)
-            {
-                base.OnAnimationStarted (isPopAnimation);
-                // put your code here
-            }
-    
-            protected override void OnAnimationFinished (bool isPopAnimation)
-            {
-                base.OnAnimationFinished (isPopAnimation);
-                // put your code here
-            }
-     }
+    {
+                protected override void OnAnimationStarted (bool isPopAnimation)
+                {
+                    base.OnAnimationStarted (isPopAnimation);
+                    // put your code here
+                }
+        
+                protected override void OnAnimationFinished (bool isPopAnimation)
+                {
+                    base.OnAnimationFinished (isPopAnimation);
+                    // put your code here
+                } 
+    }
 
 If you use my control with «IAnimationPage» looks at this sample:
 
     public class SamplePage : ContentPage, IAnimationPage
     {
-        public void OnAnimationStarted (bool isPopAnimation)
-        {
-        // put your code here
-        }
-    
-        public void OnAnimationFinished (bool isPopAnimation)
-        {
-        // put your code here
-        } 
+            public void OnAnimationStarted (bool isPopAnimation)
+            {
+            // put your code here
+            }
+        
+            public void OnAnimationFinished (bool isPopAnimation)
+            {
+            // put your code here
+            } 
     }
     
 **New in 1.5.3**
