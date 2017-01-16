@@ -61,24 +61,7 @@ public partial class FirstPage : ContentPage, IAnimationPage
 **New in 1.5.4**
  
  - Added methods that to be called when the page starts and finishes the animation.
-If you use my control with «AnimationPage» looks at this sample:
-
-    public class SamplePage : AnimationPage
-    {
-                protected override void OnAnimationStarted (bool isPopAnimation)
-                {
-                    base.OnAnimationStarted (isPopAnimation);
-                    // put your code here
-                }
-        
-                protected override void OnAnimationFinished (bool isPopAnimation)
-                {
-                    base.OnAnimationFinished (isPopAnimation);
-                    // put your code here
-                } 
-    }
-
-If you use my control with «IAnimationPage» looks at this sample:
+If you use control with «IAnimationPage» looks at this sample:
 
     public class SamplePage : ContentPage, IAnimationPage
     {
@@ -92,7 +75,8 @@ If you use my control with «IAnimationPage» looks at this sample:
             // put your code here
             } 
     }
-    
+If you use control with AnimationPage - override methods "OnAnimationStarted" and "OnAnimationFinished".
+   
 **New in 1.5.3**
 
 - Implement Property AnimateNavigationBar (bool) in AnimationNavigationPage. According this issue: https://github.com/AlexandrNikulin/AnimationNavigationPage/issues/11
