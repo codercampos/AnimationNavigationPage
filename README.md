@@ -58,6 +58,41 @@ public partial class FirstPage : ContentPage, IAnimationPage
 ```
 
 ##Changes
+**New in 1.5.4**
+ 
+ - Added methods that to be called when the page starts and finishes the animation.
+If you use my control with «AnimationPage» looks at this sample:
+
+    public class SamplePage : AnimationPage
+     {
+            protected override void OnAnimationStarted (bool isPopAnimation)
+            {
+                base.OnAnimationStarted (isPopAnimation);
+                // put your code here
+            }
+    
+            protected override void OnAnimationFinished (bool isPopAnimation)
+            {
+                base.OnAnimationFinished (isPopAnimation);
+                // put your code here
+            }
+     }
+
+If you use my control with «IAnimationPage» looks at this sample:
+
+    public class SamplePage : ContentPage, IAnimationPage
+    {
+        public void OnAnimationStarted (bool isPopAnimation)
+        {
+        // put your code here
+        }
+    
+        public void OnAnimationFinished (bool isPopAnimation)
+        {
+        // put your code here
+        } 
+    }
+    
 **New in 1.5.3**
 
 - Implement Property AnimateNavigationBar (bool) in AnimationNavigationPage. According this issue: https://github.com/AlexandrNikulin/AnimationNavigationPage/issues/11
@@ -66,11 +101,3 @@ public partial class FirstPage : ContentPage, IAnimationPage
 
 - Implement Bounce Effect for Animations.
 
-**New in 1.5.1**
-
-- Support Animation Duration for FormsAppCompatActivity (Android).
-
-**New in 1.5.0**
-
-- New animation types (Roll and Rotate).
-- Support FormsAppCompatActivity for Android (limitation not supported Flip animation and changing animation duration. This features will be implemented on next versions).
