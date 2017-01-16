@@ -63,6 +63,7 @@ public partial class FirstPage : ContentPage, IAnimationPage
  - Added methods that to be called when the page starts and finishes the animation.
  
 If you use control with AnimationPage - override methods "OnAnimationStarted" and "OnAnimationFinished".
+
 If you use control with «IAnimationPage» looks at this sample:
 
     public class SamplePage : ContentPage, IAnimationPage
