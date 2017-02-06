@@ -58,7 +58,7 @@ public partial class FirstPage : ContentPage, IAnimationPage
 ```
 
 ##Changes
-**New in 1.5.4**
+**New in 1.5.5**
  
  - Added methods that to be called when the page starts and finishes the animation.
  
