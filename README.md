@@ -29,7 +29,7 @@ A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl
    
 **New in 1.5.3**
 
-- Implement Property AnimateNavigationBar (bool) in AnimationNavigationPage. According this issue: https://github.com/AlexandrNikulin/AnimationNavigationPage/issues/11
+- Implement Property AnimateNavigationBar (bool) in AnimationNavigationPage.
 
 **New in 1.5.2**
 
