@@ -19,43 +19,8 @@ Override the default Page Transitions for Xamarin.Forms when calling PushAsync a
 - [ ] WP (Coming Soon)
 
 ## Usage
-The simplest example of using AnimationNavigationPage looks something like this:
+A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl-Laobu @ https://github.com/bbl-Laobu/AnimatedTransitionNavPageDemo
 
-- Create AnimationNavigationPage
-```csharp  
-public class App : Application
-{
-        public App()
-        {
-            MainPage = new AnimationNavigationPage(new YourHomePage());
-        }
-}
-```
-- Create AnimationPage instead ContentPage and create instance of FadePageAnimation or PushPageAnimation or FlipPageAnimation etc in xaml or bind from ViewModel.
-```csharp   
-<?xml version="1.0" encoding="UTF-8"?>
-<controls:AnimationPage xmlns="http://xamarin.com/schemas/2014/forms"
-        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        xmlns:controls="clr-namespace:FormsControls.Base;assembly=FormsControls.Base"
-        x:Class="Sample.FadeAnimationPage"
-        Title="Fade Animation">
-        <controls:AnimationPage.PageAnimation>
-            <controls:FadePageAnimation />
-        </controls:AnimationPage.PageAnimation>
-</controls:AnimationPage>
-```
-- Or implement interface IAnimationPage for ContentPage. Create instance of EmptyPageAnimation or DefaultPageAnimation or FlipPageAnimation etc... 
-```csharp   
-public partial class FirstPage : ContentPage, IAnimationPage
-{
-        public FirstPage()
-        {
-            InitializeComponent();
-        }
-    
-        public IPageAnimation PageAnimation { get; } = new FlipPageAnimation { Duration = 650, Subtype = AnimationSubtype.FromLeft }; 
-}
-```
 
 ##Changes
 **New in 1.5.5**
