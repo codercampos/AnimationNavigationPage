@@ -3,12 +3,12 @@ Override the default Page Transitions for Xamarin.Forms when calling PushAsync a
 
 ![Android](Gif/Android.gif) ![iOS](Gif/iOS.gif)
 
-##Features
+## Features
 - Set Animation Duration.
 - Select Animation type (Empty, Push, Fade, Flip, Slide, Roll, Rotate).
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
 
-##Links
+## Links
 - [Xamarin Components Store](https://components.xamarin.com/view/customnavpage)
 - [YouTube Demo](https://youtu.be/Re48wHf_7yU)
 
@@ -25,24 +25,7 @@ A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl
 ##Changes
 **New in 1.5.5**
  
- - Added methods that to be called when the page starts and finishes the animation.
- 
-If you use control with AnimationPage - override methods "OnAnimationStarted" and "OnAnimationFinished".
-
-If you use control with «IAnimationPage» looks at this sample:
-
-    public class SamplePage : ContentPage, IAnimationPage
-    {
-            public void OnAnimationStarted (bool isPopAnimation)
-            {
-            // put your code here
-            }
-        
-            public void OnAnimationFinished (bool isPopAnimation)
-            {
-            // put your code here
-            } 
-    }
+- Added methods that to be called when the page starts and finishes the animation.
    
 **New in 1.5.3**
 
