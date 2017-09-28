@@ -23,6 +23,10 @@ A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl
 
 
 ##Changes
+**New in 1.5.6**
+ 
+- Support Xamarin.Forms 2.4.0.
+
 **New in 1.5.5**
  
 - Added methods that to be called when the page starts and finishes the animation.
