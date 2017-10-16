@@ -23,6 +23,7 @@ A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl
 
 
 ##Changes
+
 **New in 1.5.7**
  
  - Fixed issue with Push animation for iOS 10.
