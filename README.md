@@ -16,7 +16,6 @@ Override the default Page Transitions for Xamarin.Forms when calling PushAsync a
 
 - [x] Android
 - [x] iOS
-- [ ] WP (Coming Soon)
 
 ## Usage
 A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl-Laobu @ https://github.com/bbl-Laobu/AnimatedTransitionNavPageDemo
