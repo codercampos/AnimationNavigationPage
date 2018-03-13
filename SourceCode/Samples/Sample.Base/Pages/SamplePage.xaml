@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controls:AnimationPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:FormsControls.Base;assembly=FormsControls.Base"
+    xmlns:local="clr-namespace:Sample;assembly=Sample"
+    x:Class="Sample.SamplePage"
+    BackgroundColor="{StaticResource DarkBackgroundColor}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="3" Source="phone.png" Aspect="AspectFill"/>
+        <StackLayout Grid.Row="1" Padding="70,0,70,10" Spacing="10">
+            <Button Text="Next" Clicked="OnNextButtonClicked" Style="{StaticResource ActionButtonStyle}"/>
+            <Button Text="Go Back" Clicked="OnBackButtonClicked" Style="{StaticResource ActionButtonStyle}"/>
+            <Button Text="Pop to Root" Clicked="OnPopToPootButtonClicked" Style="{StaticResource ActionButtonStyle}"/>
+        </StackLayout>
+    </Grid>
+</controls:AnimationPage>

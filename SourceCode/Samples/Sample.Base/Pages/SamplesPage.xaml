@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Sample.SamplesPage"
+    xmlns:local="clr-namespace:Sample;assembly=Sample"
+    xmlns:behaviors="clr-namespace:Sample.Behaviors;assembly=Sample"
+    xmlns:controls="clr-namespace:FormsControls.Base;assembly=FormsControls.Base"
+    NavigationPage.BackButtonTitle="Back"
+    BackgroundColor="{StaticResource MainBackgroundColor}"
+    Title="{Binding PageTitle}">
+    <ContentPage.Behaviors>
+        <behaviors:EventToCommandBehavior EventName="Appearing" Command="{Binding PageAppearingCommand}" CommandParameter="{x:Reference slider}"/>
+    </ContentPage.Behaviors>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="3" Source="phone.png" Aspect="AspectFill"/>
+        <Label Text="Bounce Effect" VerticalOptions="End" HorizontalOptions="Start" IsVisible="{Binding ShowBounceSwitcher}"
+            FontSize="15" Margin="70,0,0,10" TextColor="White"/>
+        <Switch x:Name="switcher" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,70,4" IsVisible="{Binding ShowBounceSwitcher}">
+            <Switch.Behaviors>
+                <behaviors:EventToCommandBehavior EventName="Toggled" Command="{Binding BounceEffectChangedCommand}" CommandParameter="{x:Reference switcher}"/>
+            </Switch.Behaviors>
+        </Switch>
+        <Button Grid.Row="1" Style="{StaticResource ActionButtonStyle}" Text="Default"
+            IsVisible="{Binding ShowDefaultButton}" Margin="70,0" VerticalOptions="End"
+            Command="{Binding ButtonClickedCommand}" CommandParameter="{StaticResource DefaultSubtype}"/>
+        <StackLayout Grid.Row="2" Padding="70,0,70,10" Spacing="8">
+            <Label TextColor="White" Text="Animations Subtypes:" FontSize="15"/>
+            <Button Style="{StaticResource ActionButtonStyle}" Text="FromLeft" 
+                Command="{Binding ButtonClickedCommand}" CommandParameter="{StaticResource FromLeftSubtype}"/>
+            <Button Style="{StaticResource ActionButtonStyle}" Text="FromRight" 
+                Command="{Binding ButtonClickedCommand}" CommandParameter="{StaticResource FromRightSubtype}"/>
+            <Button Style="{StaticResource ActionButtonStyle}" Text="FromTop" 
+                Command="{Binding ButtonClickedCommand}" CommandParameter="{StaticResource FromTopSubtype}"/>
+            <Button Style="{StaticResource ActionButtonStyle}" Text="FromBottom" 
+                Command="{Binding ButtonClickedCommand}" CommandParameter="{StaticResource FromBottomSubtype}"/>
+            <Label TextColor="White" Text="Animation Duration" FontSize="15"/>
+            <Slider x:Name="slider" Minimum="{x:Static local:Constants.MinDuration}" Maximum="{x:Static local:Constants.MaxDuration}" 
+                controls:ColoredEffect.HasColored="true" controls:ColoredEffect.Color="{StaticResource PrimaryColor}">
+                <ContentPage.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ValueChanged" Command="{Binding DurationChangedCommand}"/>
+                </ContentPage.Behaviors>
+            </Slider>
+        </StackLayout>
+    </Grid>
+</ContentPage>

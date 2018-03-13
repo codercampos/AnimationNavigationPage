@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:controls="clr-namespace:FormsControls.Base;assembly=FormsControls.Base"
+ xmlns:views="clr-namespace:Sample;assembly=Sample"
+ x:Class="Sample.SideMenuPage"
+ BackgroundColor="{StaticResource MainBackgroundColor}"
+ Title="Menu"
+ Icon="hamburguer_icon.png">
+    <Grid Padding = "0,20,0,0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <controls:BrandBlock />
+        <controls:Badge Text="28" HorizontalOptions="Start" TranslationX="220" TranslationY="-30"/>
+        <ListView x:Name="listView" Grid.Row="1"
+            ItemsSource="{Binding SamplesGroupedByCategory}"
+            GroupDisplayBinding="{Binding Name}" 
+            BackgroundColor="{StaticResource MainBackgroundColor}"
+            Style="{StaticResource SideMenuListViewStyle}">
+            <ListView.GroupHeaderTemplate> 
+                <DataTemplate> 
+                    <ViewCell Height="20"> 
+                        <views:SideMenuGroupHeaderTemplate />
+                    </ViewCell> 
+                </DataTemplate> 
+            </ListView.GroupHeaderTemplate> 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <views:SideMenuItemTemplate/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

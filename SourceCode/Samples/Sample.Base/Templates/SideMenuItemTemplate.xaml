@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:FormsControls.Base;assembly=FormsControls.Base"
+    x:Class="Sample.SideMenuItemTemplate"
+    Padding="15,0"
+	Orientation="Horizontal">
+    <Label Text="{Binding Icon}" VerticalOptions="CenterAndExpand" Style="{StaticResource SideMenuIconStyle}"/>
+    <Label Text="{Binding Name}" VerticalOptions="CenterAndExpand" Style="{StaticResource SideMenuLabelStyle}"/>
+    <controls:Badge Text="new" TextColor="{StaticResource MainBackgroundColor}" Color="White" IsVisible="{Binding ShowBadge}" BadgeType="Square" VerticalOptions="Center" HorizontalOptions="End"/>
+</StackLayout>

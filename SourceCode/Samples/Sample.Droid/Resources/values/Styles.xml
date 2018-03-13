@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources> 
+    <style name="MyTheme" parent="@android:style/Theme.Holo"> 
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item> 
+    </style>
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar"> 
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item> 
+        <item name="android:background">@color/primary</item> 
+    </style> 
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title"> 
+        <item name="android:textColor">@android:color/white</item> 
+    </style>
+    <style name="Theme.Splash" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MyThemeAppCompat" parent="AppCompatTheme.Base">
+    </style>
+    <!-- Base theme applied no matter what API -->
+    <style name="AppCompatTheme.Base" parent="Theme.AppCompat">
+        <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+        <item name="windowNoTitle">true</item>
+        <!--We will be using the toolbar so no need to show ActionBar-->
+        <item name="windowActionBar">false</item>
+        <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+        <item name="colorAccent">@color/accent</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal. -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+    </style>
+    <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#FF4081</item>
+    </style>
+</resources>
