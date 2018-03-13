@@ -1,4 +1,4 @@
-# Added all source code
+# Updates: Published all source code.
 
 # Animation Navigation Page
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
