@@ -1,3 +1,5 @@
+# Updates: Published all source code.
+
 # Animation Navigation Page
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
 
@@ -16,22 +18,7 @@ Override the default Page Transitions for Xamarin.Forms when calling PushAsync a
 
 - [x] Android
 - [x] iOS
-- [ ] WP (Coming Soon)
 
 ## Usage
 A Simple Custom Animated Page Transitions Demonstration for Xamarin Forms By bbl-Laobu @ https://github.com/bbl-Laobu/AnimatedTransitionNavPageDemo
-
-
-##Changes
-**New in 1.5.5**
- 
-- Added methods that to be called when the page starts and finishes the animation.
-   
-**New in 1.5.3**
-
-- Implement Property AnimateNavigationBar (bool) in AnimationNavigationPage.
-
-**New in 1.5.2**
-
-- Implement Bounce Effect for Animations.
 
