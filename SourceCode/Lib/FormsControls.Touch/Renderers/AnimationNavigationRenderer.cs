@@ -51,7 +51,8 @@ namespace FormsControls.Touch
         {
             if (animated)
             {
-                _delegate.Animation = _popToRootAnimation;
+                if(_delegate.Animation.Type != AnimationType.Push)
+                    _delegate.Animation = _popToRootAnimation;
             }
             else
             {
