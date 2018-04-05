@@ -2,16 +2,13 @@
 
  <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
     <ReleaseVersion>1.0.0</ReleaseVersion>
 </PropertyGroup>
  <ItemGroup>
-   <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+   <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
  </ItemGroup>
  <ItemGroup>
     <ProjectReference Include="..\..\Lib\FormsControls.Base\FormsControls.Base.csproj">
-      <Project>{453B182A-A11B-41B8-AB06-F90E5C0FD967}</Project>
-      <Name>FormsControls.Base</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
