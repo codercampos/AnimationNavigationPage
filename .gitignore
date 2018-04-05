@@ -240,3 +240,4 @@ _Pvt_Extensions
 
 # Ignore generated Android output (.apk) 
 *.apk
+/SourceCode/Samples/Sample.Droid/Sample.Droid.csproj.bak

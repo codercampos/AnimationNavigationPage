@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Android.Content;
 using FormsControls.Base;
 using FormsControls.Droid;
 using Xamarin.Forms;
@@ -20,7 +21,8 @@ namespace FormsControls.Droid
         private const int TransitionDuration = 700;
         private readonly AppCompatNavRendererHelper _hepler;
 
-        public AppCompatAnimationNavRenderer()
+        public AppCompatAnimationNavRenderer(Context context)
+        : base(context)
         {
             _hepler = new AppCompatNavRendererHelper(this);
         }
@@ -203,7 +205,7 @@ namespace FormsControls.Droid
 
         private async void RemoveFragments(List<Fragment> fragmentsToRemove)
         {
-            await Task.Delay(Context.Resources.GetInteger(Resource.Integer.animation_duration));
+            await Task.Delay(Context.Resources.GetInteger(Resource.Integer.animation_duration)).ConfigureAwait(true);
             FragmentManager fm = _hepler.FragmentManager;
             FragmentTransaction transaction = fm.BeginTransaction();
             transaction.DisallowAddToBackStack();
