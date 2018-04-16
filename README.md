@@ -7,6 +7,8 @@ Using the AnimationNavPage we can demonstrate how to create a custom transition 
 
 ![Android](Gif/Android.gif) ![iOS](Gif/iOS.gif)
 
+- NuGet: https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage [![NuGet](https://img.shields.io/nuget/v/XForms.Plugin.AnimationNavigationPage.svg)](https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage/)
+
 ## Features
 - Set Animation Duration.
 - Select Animation type (Empty, Push, Fade, Flip, Slide, Roll, Rotate).
