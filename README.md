@@ -30,7 +30,7 @@ Setting-up and using the component happens in 3 steps:
 3.	Create and Animation page
 
 ## INSTALL
-Download the ‘customnavpage’ package from https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage.
+Download the package from https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage.
 
 Next, add 'FormsControls.Touch.Main.Init()' into AppDelegate.cs of your Xamarin.iOS Project:
 ```csharp
