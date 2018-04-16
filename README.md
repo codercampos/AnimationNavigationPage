@@ -3,7 +3,7 @@
 # Animation Navigation Page
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
 
-[NuGet package] (https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage)[![NuGet](https://img.shields.io/nuget/v/XForms.Plugin.AnimationNavigationPage.svg)](https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage) 
+https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage [![NuGet](https://img.shields.io/nuget/v/XForms.Plugin.AnimationNavigationPage.svg)](https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage) 
 
 Using the AnimationNavPage we can demonstrate how to create a custom transition between different pages.
 
@@ -15,7 +15,7 @@ Using the AnimationNavPage we can demonstrate how to create a custom transition 
 - Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
 
 ## Links
-- [NuGet] (https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage)[![NuGet](https://img.shields.io/nuget/v/XForms.Plugin.AnimationNavigationPage.svg)](https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage) 
+- [NuGet] (https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage)
 - [Xamarin Components Store](https://components.xamarin.com/view/customnavpage)
 - [YouTube Demo](https://youtu.be/Re48wHf_7yU)
 
