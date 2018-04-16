@@ -3,6 +3,7 @@
 # Animation Navigation Page
 
 Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
+
 Available on NuGet: https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage [![NuGet](https://img.shields.io/nuget/v/XForms.Plugin.AnimationNavigationPage.svg)](https://www.nuget.org/packages/XForms.Plugin.AnimationNavigationPage) 
 
 ![Android](Gif/Android.gif) ![iOS](Gif/iOS.gif)
