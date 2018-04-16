@@ -3,7 +3,7 @@
   <metadata minClientVersion="2.8.3">
     <id>XForms.Plugin.AnimationNavigationPage</id>
     <version>1.0.0</version>
-    <title>Animation Navigation for Xamarin Forms</title>
+    <title>AnimationNavigationPage for Xamarin.Froms</title>
     <authors>Alexandr Nikulin</authors>
     <owners>Alexandr Nikulin</owners>
     <licenseUrl>https://github.com/AlexandrNikulin/AnimationNavigationPage/blob/master/LICENSE</licenseUrl>
@@ -14,15 +14,14 @@
       Animation navigation page
     </releaseNotes>
     <description>
-      Custom Animated Page Transitions for Xamarin Forms
+      Override the default Page Transitions for Xamarin.Forms when calling PushAsync and PopAsync.
     </description>
     <summary>
-      • Set Animation Duration.
-
-      • Select Animation type (Empty, Push, Fade, Flip, Slide, Roll, Rotate).
-
-      • Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
+      AnimationNavigationPage is a NavigationPage with custom transitions animation effects.
     </summary>
+    <dependencies>
+        <dependency id="Xamarin.Forms" version="2.5.0.121934" />
+    </dependencies>
   </metadata>
   <files>
 
