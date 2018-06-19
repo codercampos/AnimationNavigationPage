@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.3">
     <id>XForms.Plugin.AnimationNavigationPage</id>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
     <title>Animation Navigation for Xamarin Forms</title>
     <authors>Alexandr Nikulin</authors>
     <owners>Alexandr Nikulin</owners>
