@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.3">
     <id>XForms.Plugin.AnimationNavigationPage</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <title>Animation Navigation for Xamarin Forms</title>
     <authors>Alexandr Nikulin</authors>
     <owners>Alexandr Nikulin</owners>
@@ -11,10 +11,10 @@
     <iconUrl>https://github.com/AlexandrNikulin/AnimationNavigationPage/blob/master/Assets/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
-      Animation navigation page
+      Xamarin Forms bumped to 3.0+
     </releaseNotes>
     <description>
-      Custom Animated Page Transitions for Xamarin Forms
+      Create Custom Animated Page Transitions for Xamarin Forms
     </description>
     <summary>
       • Set Animation Duration.
