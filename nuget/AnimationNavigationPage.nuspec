@@ -17,16 +17,15 @@
       Create Custom Animated Page Transitions for Xamarin Forms
     </description>
     <summary>
-      • Set Animation Duration.
-
-      • Select Animation type (Empty, Push, Fade, Flip, Slide, Roll, Rotate).
-
-      • Select Animation Subtype (Default, FromLeft, FromRight, FromTop, FromBottom).
+      AnimationNavigationPage is a NavigationPage with custom transitions animation effects.
     </summary>
+    <dependencies>
+        <dependency id="Xamarin.Forms" version="2.5.0.121934" />
+    </dependencies>
   </metadata>
   <files>
 
-    <!-- Cross-platform reference assemblies -->
+    <!-- Cross-platform .net standard reference assemblies -->
     <file src="..\SourceCode\Lib\FormsControls.Base\bin\Release\netstandard2.0\*.dll" target="lib\netstandard2.0"/>
 
     <!-- Android reference assemblies -->
