@@ -8,6 +8,7 @@ using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms.Platform.Android.AppCompat;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
+using Android.Content;
 
 namespace FormsControls.Droid
 {
@@ -25,8 +26,8 @@ namespace FormsControls.Droid
         private readonly MethodInfo _animateArrowOutMethodInfo = typeof(NavigationPageRenderer).GetMethod("AnimateArrowOut", BindingFlags.NonPublic | BindingFlags.Instance);
         private readonly FieldInfo _drawerToggleFieldInfo = typeof(NavigationPageRenderer).GetField("_drawerToggle", BindingFlags.NonPublic | BindingFlags.Instance);
         private static readonly Type _appCompatPlatformType = Type.GetType("Xamarin.Forms.Platform.Android.AppCompat.Platform, Xamarin.Forms.Platform.Android");
-        private static readonly FieldInfo _platformFieldInfo = typeof(FormsAppCompatActivity).GetField("_platform", BindingFlags.NonPublic | BindingFlags.Instance);
-        private static readonly object _platform = _platformFieldInfo.GetValue(Forms.Context as FormsAppCompatActivity);
+        private static readonly PropertyInfo _platformFieldInfo = typeof(FormsAppCompatActivity).GetProperty("Platform", BindingFlags.NonPublic | BindingFlags.Instance);
+        private static object _platform;
         private static readonly PropertyInfo _animationInProgressPropertyInfo = _appCompatPlatformType.GetProperty("NavAnimationInProgress", BindingFlags.NonPublic | BindingFlags.Instance);
 
         private readonly NavigationPageRenderer _renderer;
@@ -43,9 +44,10 @@ namespace FormsControls.Droid
 
         internal List<Fragment> FragmentStack => _fragmentStackFieldInfo.GetValue(_renderer) as List<Fragment>;
 
-        public AppCompatNavRendererHelper(NavigationPageRenderer renderer)
+        public AppCompatNavRendererHelper(NavigationPageRenderer renderer, Context context)
         {
             _renderer = renderer;
+            _platform = _platformFieldInfo.GetValue(context as FormsAppCompatActivity);
         }
 
         public void UnsubscribeFromStandardNavigationEvents(INavigationPageController page)

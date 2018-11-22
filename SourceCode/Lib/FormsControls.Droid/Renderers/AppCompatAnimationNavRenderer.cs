@@ -24,7 +24,7 @@ namespace FormsControls.Droid
         public AppCompatAnimationNavRenderer(Context context)
         : base(context)
         {
-            _hepler = new AppCompatNavRendererHelper(this);
+            _hepler = new AppCompatNavRendererHelper(this, context);
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<NavigationPage> e)
