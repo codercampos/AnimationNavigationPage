@@ -28,6 +28,9 @@ namespace FormsControls.Base
         protected override void SetUIParams(AnimationSubtype subType)
         {
             var uiParams = DefaultUIParams;
+            
+            uiParams.Alpha = Alpha;
+            
             switch (subType)
             {
                 case AnimationSubtype.FromBottom:
