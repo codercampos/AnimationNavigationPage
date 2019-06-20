@@ -43,11 +43,11 @@ namespace FormsControls.Droid
 
         protected override void Dispose(bool disposing)
         {
-            base.Dispose(disposing);
             if (Element != null)
             {
                 UnsubscribeFromNavigationEvents(Element);
             }
+            base.Dispose(disposing);
         }
 
         private void SubscribeToNavigationEvents(INavigationPageController page)
