@@ -13,7 +13,7 @@ namespace FormsControls.Touch
     public class AnimationNavigationRenderer : NavigationRenderer
     {
         private readonly IPageAnimation _popToRootAnimation = new SlidePageAnimation();
-        private readonly UISwipeGestureRecognizer _swipeLeftRecognizer;
+      // private readonly UISwipeGestureRecognizer _swipeLeftRecognizer;
         private readonly PushPageAnimation _defaultAnimation = new PushPageAnimation();
         private readonly PropertyInfo _currentPagePropertyInfo = typeof(NavigationRenderer).GetProperty("Current", BindingFlags.NonPublic | BindingFlags.Instance);
         private readonly NavigationControllerDelegate _delegate = new NavigationControllerDelegate();
@@ -22,11 +22,11 @@ namespace FormsControls.Touch
         public AnimationNavigationRenderer()
         {
             Delegate = _delegate;
-            _swipeLeftRecognizer = new UISwipeGestureRecognizer(SwipeToGoBack)
-            {
-                Direction = UISwipeGestureRecognizerDirection.Right,
-                Delegate = new GestureRecognizerDelegate()
-            };
+            //_swipeLeftRecognizer = new UISwipeGestureRecognizer(SwipeToGoBack)
+            //{
+            //    Direction = UISwipeGestureRecognizerDirection.Right,
+            //    Delegate = new GestureRecognizerDelegate()
+            //};
         }
 
         private Page CurrentPage => _currentPagePropertyInfo.GetValue(this) as Page;
@@ -40,11 +40,11 @@ namespace FormsControls.Touch
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            InteractivePopGestureRecognizer.Enabled = false;
-            if ((Element as AnimationNavigationPage).EnableInteractivePopGesture)
-            {
-                View.AddGestureRecognizer(_swipeLeftRecognizer);
-            }
+            //InteractivePopGestureRecognizer.Enabled = false;
+            //if ((Element as AnimationNavigationPage).EnableInteractivePopGesture)
+            //{
+            //    View.AddGestureRecognizer(_swipeLeftRecognizer);
+            //}
         }
 
         public override UIViewController[] PopToRootViewController(bool animated)
