@@ -17,6 +17,7 @@
     </AndroidTlsProvider>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -375,7 +376,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FormsControls.Base\FormsControls.Base.csproj">
-      <Project>{453B182A-A11B-41B8-AB06-F90E5C0FD967}</Project>
+      <Project>{AEB083E2-6C09-4F27-97D5-2DF31A6550EC}</Project>
       <Name>FormsControls.Base</Name>
     </ProjectReference>
   </ItemGroup>

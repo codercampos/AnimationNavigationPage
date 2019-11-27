@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.3">
-    <id>XForms.Plugin.AnimationNavigationPage</id>
+    <id>Xamarin.Forms.AnimationNavigation</id>
     <version>2.0.0</version>
     <title>Animation Navigation for Xamarin Forms</title>
-    <authors>Alexandr Nikulin</authors>
-    <owners>Alexandr Nikulin</owners>
-    <projectUrl>https://github.com/AlexandrNikulin/AnimationNavigationPage</projectUrl>
-    <iconUrl>https://github.com/AlexandrNikulin/AnimationNavigationPage/blob/master/Assets/icon.png</iconUrl>
+    <authors>Alexandr Nikulin,Prateek Mahendrakar</authors>
+    <owners>Alexandr Nikulin,Prateek Mahendrakar</owners>
+    <projectUrl>https://github.com/pmahend1/AnimationNavigationPage</projectUrl>
+    <icon>Assets\icon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
     <releaseNotes>
-      Fix Android build issues.
+      Fix iOS swipe to blank page issue
     </releaseNotes>
     <description>
-      Create Custom Animated Page Transitions for Xamarin Forms
+      Create Custom Animated Page Transitions for Xamarin Forms, forked from XForms.Plugin.AnimationNavigationPage
     </description>
     <summary>
-      AnimationNavigationPage is a NavigationPage with custom transitions animation effects.
+      AnimationNavigationPage is a NavigationPage with custom transitions animation effects, forked from XForms.Plugin.AnimationNavigationPage
     </summary>
     <dependencies>
-        <dependency id="Xamarin.Forms" version="3.4.0.1008975" />
+      <dependency id="Xamarin.Forms" 
+        version="3.4.0.1008975" />
     </dependencies>
   </metadata>
   <files>
 
     <!-- Cross-platform .net standard reference assemblies -->
-    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Base\bin\Release\netstandard2.0\FormsControls.Base.dll" target="lib\netstandard2.0"/>
+    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Base\bin\Release\netstandard2.0\FormsControls.Base.dll" 
+      target="lib\netstandard2.0"/>
 
     <!-- Android reference assemblies -->
-    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Droid\bin\Release\FormsControls.Base.dll" target="lib\MonoAndroid10"/>
-    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Droid\bin\Release\FormsControls.Droid.dll" target="lib\MonoAndroid10"/>
+    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Droid\bin\Release\FormsControls.Base.dll" 
+      target="lib\MonoAndroid10"/>
+    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Droid\bin\Release\FormsControls.Droid.dll" 
+      target="lib\MonoAndroid10"/>
 
     <!-- iOS reference assemblies -->
-    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Touch\bin\Release\FormsControls.Base.dll" target="lib\Xamarin.iOS10" />
-    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Touch\bin\Release\FormsControls.Touch.dll" target="lib\Xamarin.iOS10" />
-
+    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Touch\bin\Release\FormsControls.Base.dll" 
+      target="lib\Xamarin.iOS10" />
+    <file src="..\SourceCode\Lib\FormsControls\FormsControls.Touch\bin\Release\FormsControls.Touch.dll" 
+      target="lib\Xamarin.iOS10" />
+    <file src="..\LICENSE" 
+      target="LICENSE\" />
+    <file src="..\Assets\icon.png" 
+      target="Assets\" />
   </files>
 </package>
