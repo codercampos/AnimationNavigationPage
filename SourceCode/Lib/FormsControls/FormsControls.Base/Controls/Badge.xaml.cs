@@ -206,7 +206,7 @@ namespace FormsControls.Base
 
         private void OnTapped(object sender, EventArgs e)
         {
-            this.ClickAnimation();
+            Device.BeginInvokeOnMainThread(async () => await this.ClickAnimation());
             TapCommand?.Execute(TapCommandParameter);
         }
     }
