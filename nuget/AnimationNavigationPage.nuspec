@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.3">
     <id>XForms.Plugin.AnimationNavigationPage</id>
-    <version>2.0.0</version>
+    <version>1.0.8</version>
     <title>Animation Navigation for Xamarin Forms</title>
-    <authors>Alexandr Nikulin</authors>
-    <owners>Alexandr Nikulin</owners>
+    <authors>Alexandr Nikulin,Prateek Mahendrakar</authors>
+    <owners>Alexandr Nikulin,Prateek Mahendrakar</owners>
     <projectUrl>https://github.com/AlexandrNikulin/AnimationNavigationPage</projectUrl>
-    <iconUrl>https://github.com/AlexandrNikulin/AnimationNavigationPage/blob/master/Assets/icon.png</iconUrl>
+    <icon>https://github.com/AlexandrNikulin/AnimationNavigationPage/blob/master/Assets/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
-      Fix Android build issues.
+      Fix iOS swipe to blank page issue
     </releaseNotes>
     <description>
       Create Custom Animated Page Transitions for Xamarin Forms
