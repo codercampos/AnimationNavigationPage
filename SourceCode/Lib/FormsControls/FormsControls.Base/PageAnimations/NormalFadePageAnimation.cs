@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace FormsControls.Base.PageAnimations
+namespace FormsControls.Base
 {
     public class NormalFadePageAnimation : PageAnimation
     {
